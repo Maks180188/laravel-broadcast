@@ -24,7 +24,7 @@ class MessageFormRequest extends FormRequest
     public function rules()
     {
         return [
-            'message' => ['required', 'string', 'min:3', 'regex:/^[a-zA-Z]+$/u', 'max:255']
+            'message' => ['required', 'string', 'min:3', 'max:255']
         ];
     }
 }
